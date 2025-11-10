@@ -10,4 +10,19 @@ public class MainController {
     public String index() {
         return "index";
     }
+
+    @GetMapping("/categorias")
+    public String categorias() {
+        return "categorias";
+    }
+
+    @GetMapping("/produto")
+    public String produto() {
+        return "produto";
+    }
+
+    @GetMapping("/conta")
+    public String conta() {
+        return "conta";
+    }
 }

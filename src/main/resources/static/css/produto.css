@@ -1,0 +1,176 @@
+.product-detail-section {
+    padding: 50px 5%;
+}
+
+.product-container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+/* Coluna da Imagem */
+.product-image-area {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.image-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.thumbnail:hover, .thumbnail.active {
+    border-color: #00FFFF;
+    opacity: 1;
+}
+
+/* Coluna de Informações */
+.product-info-area {
+    flex: 1;
+    padding: 40px;
+}
+
+.product-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #00FFFF;
+}
+
+.product-rating-detail {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.stars i {
+    color: gold;
+    margin-right: 2px;
+}
+
+.product-price-large {
+    font-size: 3em;
+    font-weight: bold;
+    color: #9932CC;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.product-description {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #E0FFFF; /* Ciano claro */
+}
+
+/* Opções e Compra */
+.product-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product-options label {
+    font-weight: bold;
+}
+
+.product-options select, .product-options input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #9932CC;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.purchase-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.add-to-cart-large, .buy-now {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.add-to-cart-large {
+    background-color: #9932CC;
+    color: white;
+}
+
+.add-to-cart-large:hover {
+    background-color: #7B24A6;
+}
+
+.buy-now {
+    background-color: #00FFFF;
+    color: #333; /* Texto escuro no ciano */
+}
+
+.buy-now:hover {
+    background-color: #70FFFF;
+}
+
+/* Abas (Tabs) */
+.product-tabs {
+    margin-top: 20px;
+}
+
+.tab-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    margin-right: 5px;
+}
+
+.tab-button.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #00FFFF;
+}
+
+.tab-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 0 5px 5px 5px;
+    display: block; /* Por simplicidade, mantemos visível, mas em um ambiente real seria escondido com JS */
+}
+
+.tab-content ul {
+    list-style: none;
+}
+
+.tab-content li {
+    margin-bottom: 10px;
+}
