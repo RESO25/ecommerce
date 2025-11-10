@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias de Produtos | E-commerce Gradiente</title>
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/categorias.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a th:href="@{/}"><div class="header-logo"><img th:src="@{/img/logo.png}" alt="Logo" id="logo"></div></a>
+        <div class="header-search">
+            <input type="search" placeholder="Buscar produtos...">
+            <button>🔍</button>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/categorias}">Categorias</a></li>
+                <li><a th:href="@{/conta}">Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="categories-section">
+        <h1 class="page-title">🛍️ Explore Nossas Categorias</h1>
+        <p class="subtitle">Encontre o que você procura em nosso universo de produtos.</p>
+        
+        <div class="categories-grid">
+            
+            <a href="#" class="category-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Eletrônicos">
+                <div class="card-info">
+                    <h2>Eletrônicos</h2>
+                    <p>Fones, Smartwatches e Gadgets</p>
+                    <i class="fas fa-microchip"></i>
+                </div>
+            </a>
+
+            <a href="#" class="category-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Moda e Vestuário">
+                <div class="card-info">
+                    <h2>Moda & Vestuário</h2>
+                    <p>Roupas com estilo Gradiente</p>
+                    <i class="fas fa-tshirt"></i>
+                </div>
+            </a>
+
+            <a href="#" class="category-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Casa e Decoração">
+                <div class="card-info">
+                    <h2>Casa & Decoração</h2>
+                    <p>Deixe seu lar com nosso brilho</p>
+                    <i class="fas fa-home"></i>
+                </div>
+            </a>
+
+            <a href="#" class="category-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Livros e Mídia">
+                <div class="card-info">
+                    <h2>Livros & Mídia</h2>
+                    <p>Conhecimento e Entretenimento</p>
+                    <i class="fas fa-book-open"></i>
+                </div>
+            </a>
+
+            <a href="#" class="category-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Beleza e Cuidados">
+                <div class="card-info">
+                    <h2>Beleza & Cuidados</h2>
+                    <p>Produtos com toques de Ciano</p>
+                    <i class="fas fa-spa"></i>
+                </div>
+            </a>
+
+            <a href="#" class="category-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Esportes e Lazer">
+                <div class="card-info">
+                    <h2>Esportes & Lazer</h2>
+                    <p>Equipamentos de alta performance</p>
+                    <i class="fas fa-running"></i>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contacts">
+            <h3>Fale Conosco</h3>
+            <p>📧 Email: contato@seuecommerce.com</p>
+            <p>📞 Telefone: (11) 98765-4321</p>
+            <p>📍 Endereço: Rua da Loja, 123 - Cidade/Estado</p>
+        </div>
+    </footer>
+
+</body>
+</html>
