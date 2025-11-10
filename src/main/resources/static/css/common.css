@@ -1,0 +1,97 @@
+/* Configurações Globais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* Gradiente Principal: Azul Ciano (#00FFFF) para Violeta (#9932CC) */
+    /* background: linear-gradient(135deg, #00FFFF 0%, #9932CC 100%); */
+    background-color: #e0e0e0;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* --- Cabeçalho --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    /* background-color: rgba(0, 0, 0, 0.5); Fundo semi-transparente */
+    background: linear-gradient(330deg, #00FFFF 0%, #9932CC 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.header-logo {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#logo{
+    width: auto;
+    height: 50px;
+}
+
+.header-search {
+    display: flex;
+    flex-grow: 1; /* Permite que a barra de busca ocupe espaço */
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.header-search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+}
+
+.header-search button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #9932CC; /* Cor violeta no botão de busca */
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.header-nav ul li a:hover {
+    color: #00FFFF; /* Hover ciano */
+}
+/* --- Rodapé --- */
+.footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px 5%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.footer-contacts h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #00FFFF;
+}
+
+.footer-contacts p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}

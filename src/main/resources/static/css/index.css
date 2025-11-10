@@ -1,3 +1,95 @@
-h1 {
-    background-color: aliceblue;
+
+/* --- Banner Rotativo --- */
+.hero-banner {
+    padding: 30px 0;
+    text-align: center;
 }
+
+.hero-banner img{
+    height:200px;
+}
+
+.slider-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Cards de Produtos --- */
+.product-grid {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.15); /* Fundo claro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Efeito de vidro (moderno) */
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    color: #00FFFF;
+}
+
+.product-price {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #9932CC;
+    margin-bottom: 10px;
+}
+
+.product-rating {
+    margin-bottom: 15px;
+    color: #FFD700; /* Cor das estrelas */
+}
+
+.add-to-cart {
+    background-color: #9932CC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #7B24A6;
+}
+

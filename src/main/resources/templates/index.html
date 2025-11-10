@@ -3,10 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce</title>
-    <link rel="stylesheet" th::src="@{/css/styles.css}">
+    <title>Home | E-commerce</title>
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/index.css}">
 </head>
 <body>
-    <h1>Bem vindo ao nosso E-commerce!</h1>
+    <header class="header">
+        <a th:href="@{/}"><div class="header-logo"><img th:src="@{/img/logo.png}" alt="Logo" id="logo"></div></a>
+        <div class="header-search">
+            <input type="search" placeholder="Buscar produtos...">
+            <button>🔍</button>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a th:href="@{/}">HOME</a></li>
+                <li><a th:href="@{/categorias}">CATEGORIAS</a></li>
+                <li><a th:href="@{/conta}">CONTA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1></h1>
+
+    <section class="hero-banner">
+        <div class="slider-container">
+            <div class="slide active">
+                <img th:src="@{/img/product_placeholder.png}" alt="Banner 1">
+            </div>
+            </div>
+    </section>
+
+    <section class="product-grid">
+        <h2 class="section-title">✨ Produtos em Destaque</h2>
+        <div class="products-container">
+            <div class="product-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Nome do Produto 1">
+                <h3 class="product-name">Nome do Produto 1</h3>
+                <p class="product-price">R$ 99,90</p>
+                <div class="product-rating">⭐⭐⭐⭐ (4.5)</div>
+                <button class="add-to-cart"><a th:href="@{/produto}">Comprar</a></button>
+            </div>
+            <div class="product-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Nome do Produto 2">
+                <h3 class="product-name">Nome do Produto 2</h3>
+                <p class="product-price">R$ 149,99</p>
+                <div class="product-rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                <button class="add-to-cart"><a th:href="@{/produto}">Comprar</a></button>
+            </div>
+            <div class="product-card">
+                <img th:src="@{/img/product_placeholder.png}" alt="Nome do Produto 3">
+                <h3 class="product-name">Nome do Produto 3</h3>
+                <p class="product-price">R$ 49,00</p>
+                <div class="product-rating">⭐⭐⭐ (3.8)</div>
+                <button class="add-to-cart"><a th:href="@{/produto}">Comprar</a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-contacts">
+            <h3>Fale Conosco</h3>
+            <p>📧 Email: contato@seuecommerce.com</p>
+            <p>📞 Telefone: (11) 98765-4321</p>
+            <p>📍 Endereço: Rua da Loja, 123 - Cidade/Estado</p>
+        </div>
+    </footer>
 </body>
 </html>
