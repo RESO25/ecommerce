@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta | E-commerce</title>
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/conta.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a th:href="@{/}"><div class="header-logo"><img th:src="@{/img/logo.png}" alt="Logo" id="logo"></div></a>
+        <div class="header-search">
+            <input type="search" placeholder="Buscar produtos...">
+            <button>🔍</button>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/categorias}">Categorias</a></li>
+                <li><a th:href="@{/conta}">Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="account-dashboard-section">
+        <h1 class="page-title">👤 Minha Conta</h1>
+        
+        <div class="dashboard-container">
+            
+            <aside class="sidebar-menu">
+                <div class="user-profile-summary">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <p class="user-name">Raphael</p>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#" class="menu-item active"><i class="fas fa-tachometer-alt"></i> Visão Geral</a></li>
+                        <li><a href="#" class="menu-item"><i class="fas fa-shopping-bag"></i> Meus Pedidos</a></li>
+                        <li><a href="#" class="menu-item"><i class="fas fa-heart"></i> Lista de Desejos</a></li>
+                        <li><a href="#" class="menu-item"><i class="fas fa-map-marker-alt"></i> Endereços</a></li>
+                        <li><a href="#" class="menu-item"><i class="fas fa-cog"></i> Configurações</a></li>
+                        <li><a href="#" class="menu-item logout"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="dashboard-content">
+                
+                <h2>Bem-vinda de volta!</h2>
+                
+                <div class="status-cards-container">
+                    <div class="status-card pending">
+                        <h3><i class="fas fa-truck"></i> Pedidos Pendentes</h3>
+                        <p class="card-number">2</p>
+                        <a href="#">Ver detalhes</a>
+                    </div>
+                    <div class="status-card points">
+                        <h3><i class="fas fa-star"></i> Pontos Fidelidade</h3>
+                        <p class="card-number">1.500</p>
+                        <a href="#">Trocar pontos</a>
+                    </div>
+                    <div class="status-card favorites">
+                        <h3><i class="fas fa-heart"></i> Na Lista de Desejos</h3>
+                        <p class="card-number">10</p>
+                        <a href="#">Ir para a lista</a>
+                    </div>
+                </div>
+
+                <div class="quick-info-section">
+                    <h3>Minhas Informações Pessoais</h3>
+                    <div class="info-block">
+                        <p><strong>Nome:</strong> Raphael Resende</p>
+                        <p><strong>Email:</strong> raphael.resende@email.com</p>
+                        <p><strong>Telefone:</strong> (13) 98841-2917</p>
+                        <a href="#" class="edit-btn">Editar Informações</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-contacts">
+            <h3>Fale Conosco</h3>
+            <p>📧 Email: contato@seuecommerce.com</p>
+            <p>📞 Telefone: (11) 98765-4321</p>
+            <p>📍 Endereço: Rua da Loja, 123 - Cidade/Estado</p>
+        </div>
+    </footer>
+
+</body>
+</html>
